@@ -37,8 +37,8 @@ cask "visual-studio-code"
 cask "jetbrains-toolbox"
 cask "zoom"
 
-mas "Enpass", id: 732710998
-mas "GIPHY Capture", id: 668208984
+mas "Enpass - Password Manager", id: 732710998
+mas "GIPHY Capture. The GIF Maker", id: 668208984
 
 vscode "GitHub.copilot"
 vscode "janisdd.vscode-edit-csv"
