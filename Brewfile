@@ -1,6 +1,9 @@
+cask_args appdir: "/Applications"
+
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+
 brew "lima"
 brew "colima"
 brew "docker"
@@ -16,17 +19,27 @@ brew "pnpm"
 brew "pyenv"
 brew "rbenv"
 brew "yq"
-brew "google-chrome"
-brew "google-japanese-ime"
-brew "iterm2"
-brew "notion"
-brew "slack"
-brew "visual-studio-code"
-brew "jetbrains-toolbox"
-brew "zoom"
-brew "enpass"
-brew "obsidian"
-brew "google-drive"
+brew 'mas'
+
+cask "obsidian"
+cask "google-drive"
+cask "ticktick"
+cask "alfred"
+cask "skitch"
+cask "clipy"
+cask "alt-tab"
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "iterm2"
+cask "notion"
+cask "slack"
+cask "visual-studio-code"
+cask "jetbrains-toolbox"
+cask "zoom"
+
+mas "Enpass", id: 732710998
+mas "GIPHY Capture", id: 668208984
+
 vscode "GitHub.copilot"
 vscode "janisdd.vscode-edit-csv"
 vscode "mechatroner.rainbow-csv"
