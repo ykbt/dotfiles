@@ -8,10 +8,14 @@ dotfiles
 brew install git
 git clone https://github.com/ykbt/dotfiles
 cd dotfiles
-./install.sh
+./all-install.sh
 ```
 
 # Install Fonts
+
+```
+./font-install.sh
+```
 
 ## お気に入りのフォント
 
@@ -22,3 +26,9 @@ Source Code Pro for Powerline.otf
 SourceHanCodeJP.ttc
 ```
 
+# Install vscode extensions
+
+```
+cd vscode
+./install.sh
+```
