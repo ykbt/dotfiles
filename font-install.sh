@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Install fonts
 echo "Installing fonts..."
