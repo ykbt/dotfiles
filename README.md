@@ -32,3 +32,10 @@ SourceHanCodeJP.ttc
 cd vscode
 ./install.sh
 ```
+
+# Install Zim
+
+```
+cd zim
+./install.sh
+```
