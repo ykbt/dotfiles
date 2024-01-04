@@ -5,10 +5,11 @@ command=$(ps -ocommand= -p $PPID)
 pattern="\-\-force|\-f"
 
 if [[ $command =~ $pattern ]] ; then
-
   # コマンドラインに確認文を出力
-  read -rp 'force pushを実行しますか？ (yes/no):' input < /dev/tty
-  if [ "${input}" = "yes" ]; then
+  read -rp 'Do you really force push? (yes/no):' input < /dev/tty
+  yes_pattern="^yes$|^y$|^Y$|^YES$|^Yes$"
+
+  if [[ $input =~ $yes_pattern ]]; then
     echo "do force push"
   else
     # yes 以外であればエラーを返す

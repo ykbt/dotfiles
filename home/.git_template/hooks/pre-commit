@@ -4,6 +4,15 @@ pattern="master|main|develop|development"
 
 # mainブランチとかmasterブランチに直接コミットしないようにする
 if [[ $branch =~ $pattern ]]; then
-  echo "Cannot commit to $branch branch directly."
-  exit 1
+  echo "Would rather commit to $branch branch directly."
+  # コマンドラインに確認文を出力
+  read -rp 'Do you really commit? (yes/no):' input < /dev/tty
+  yes_pattern="^yes$|^y$|^Y$|^YES$|^Yes$"
+
+  if [[ $input =~ $yes_pattern ]]; then
+    echo "do commit"
+  else
+    # yes 以外であればエラーを返す
+    exit 1;
+  fi
 fi
