@@ -3,7 +3,7 @@
 # 入力コマンドを取得
 command=$(ps -ocommand= -p $PPID)
 
-if [[  $command =~ '\-\-force|\-f' ]] ; then
+if [[ $command =~ '\-\-force|\-f' ]] ; then
 
   # コマンドラインに確認文を出力
   read -rp 'force pushを実行しますか？ (yes/no):' input < /dev/tty

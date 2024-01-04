@@ -2,7 +2,7 @@
 branch=`git symbolic-ref HEAD --short`
 
 # mainブランチとかmasterブランチに直接コミットしないようにする
-if [ "$branch" =~ "master|main|develop|development" ]; then
+if [[ "$branch" =~ "master|main|develop|development" ]]; then
   echo "Cannot commit to $branch branch directly."
   exit 1
 fi
