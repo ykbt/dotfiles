@@ -4,7 +4,7 @@
 
 [init]
 	defaultBranch = master
-	templateDir = ~/.git-templates
+	templateDir = ~/.git_template
 
 [url "github:"]
 	InsteadOf = https://github.com/
