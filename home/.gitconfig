@@ -1,3 +1,7 @@
 [user]
 	name = Yusuke Kubota
 	email = ykubota.rec@gmail.com
+
+[init]
+	defaultBranch = master
+	templateDir = ~/.git-templates
